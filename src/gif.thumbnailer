@@ -1,0 +1,4 @@
+[Thumbnailer Entry]
+TryExec=/opt/extras.ubuntu.com/msoffice-thumbnailer/bin/gif-thumbnailer
+Exec=/opt/extras.ubuntu.com/msoffice-thumbnailer/bin/gif-thumbnailer %i %o %s
+MimeType=image/gif;
