@@ -1,8 +1,8 @@
-gif-thumbnailer (0.0.3-0extras15.04.0) vivid; urgency=medium
+gif-thumbnailer (0.0.3-0extras15.04.1) vivid; urgency=medium
 
   * Improved code
 
- -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sun, 16 Aug 2015 09:02:19 +0200
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sun, 23 Aug 2015 10:08:55 +0200
 
 gif-thumbnailer (0.0.2-0extras15.04.0) vivid; urgency=medium
 
