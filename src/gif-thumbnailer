@@ -5,7 +5,6 @@
 # Depends on :
 #   * gvfs-copy (gvfs-bin package)
 #   * convert (imagemagick package)
-#	* gifsicle (gifsicle package)
 # Parameters :
 #   $1 - URI of office file
 #   $2 - full path of generated thumbnail
@@ -14,9 +13,7 @@
 
 # check tools availability
 command -v gvfs-copy >/dev/null 2>&1 || exit 1
-command -v unoconv >/dev/null 2>&1 || exit 1
 command -v convert >/dev/null 2>&1 || exit 1
-command -v gifsicle >/dev/null 2>&1 || exit 1
 
 # get parameters
 FILE_URI=$1
@@ -33,11 +30,8 @@ TMP_BASEFILE="$TMP_DIR/file"
 # copy file to temporary local directory
 gvfs-copy "${FILE_URI}" "${TMP_BASEFILE}.${FILE_EXT}"
 
-# get first image of gif
-gifsicle "${TMP_BASEFILE}.${FILE_EXT}" '#0' -o "${TMP_BASEFILE}_temporal"
-
 # convert gif to png
-convert -resize ${HEIGHT}x${HEIGHT} "${TMP_BASEFILE}_temporal" png:"$FILE_THUMB"
+convert -thumbnail ${HEIGHT} "${TMP_BASEFILE}.${FILE_EXT}[0]" png:"$FILE_THUMB"
 
 # remove temporary files
 rm -R $TMP_DIR

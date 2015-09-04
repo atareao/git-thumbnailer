@@ -1,3 +1,9 @@
+gif-thumbnailer (0.0.4-0extras15.04.0) vivid; urgency=medium
+
+  * Changed the way of selecting first frame
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Fri, 04 Sep 2015 07:56:29 +0200
+
 gif-thumbnailer (0.0.3-0extras15.04.1) vivid; urgency=medium
 
   * Improved code
