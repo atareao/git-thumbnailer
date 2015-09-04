@@ -9,8 +9,7 @@ Homepage: http://www.atareao.es
 Package: gif-thumbnailer
 Architecture: all
 Depends: ${misc:Depends}, 
-	imagemagick,
-	gifsicle	
+	imagemagick
 Description: A thumbnailer for gif images
  GifThumbnailer is a thumnailer for nautilus which can
  create thumnails for gif images
